@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-27T20:31:08 IST" name="Default suite" finished-at="2023-04-27T20:31:40 IST" duration-ms="32385">
+    <groups>
+      <group name="smoke">
+        <method signature="Ppu_tc_endtoend.CheckouttoHybrid(java.util.HashMap)[pri:0, instance:com.AppiumFrameworkDesign.Ppu_tc_endtoend@41a0aa7d]" name="CheckouttoHybrid" class="com.AppiumFrameworkDesign.Ppu_tc_endtoend"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-04-27T20:31:08 IST" name="Default test" finished-at="2023-04-27T20:31:40 IST" duration-ms="32385">
+      <class name="com.AppiumFrameworkDesign.Ppu_tc_endtoend">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:com.AppiumFrameworkDesign.Ppu_tc_endtoend@41a0aa7d]" started-at="2023-04-27T20:31:08 IST" name="ConfigureAppium" finished-at="2023-04-27T20:31:40 IST" duration-ms="31990" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.ppubarereactnative' application. Consider checking the driver's troubleshooting documentation. Original error: 'com.ppubarereactnative.SplashActivity' or 'com.ppubarereactnative.com.ppubarereactnative.SplashActivity' never started. Consider checking the driver's troubleshooting documentation. 
+Host info: host: 'TBIN-WLT-082213', ip: '192.168.1.4'
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=BhargavPixel5, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:\Users\bhargavs\Downloads\ppu-release-v33.apk}], desiredCapabilities=Capabilities {appium:app: C:\Users\bhargavs\Downloads..., appium:automationName: UIAutomator2, appium:deviceName: BhargavPixel5, platformName: ANDROID}}]
+Capabilities {appium:app: C:\Users\bhargavs\Downloads..., appium:automationName: UIAutomator2, appium:deviceName: BhargavPixel5, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.ppubarereactnative' application. Consider checking the driver's troubleshooting documentation. Original error: 'com.ppubarereactnative.SplashActivity' or 'com.ppubarereactnative.com.ppubarereactnative.SplashActivity' never started. Consider checking the driver's troubleshooting documentation. 
+Host info: host: 'TBIN-WLT-082213', ip: '192.168.1.4'
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=BhargavPixel5, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:\Users\bhargavs\Downloads\ppu-release-v33.apk}], desiredCapabilities=Capabilities {appium:app: C:\Users\bhargavs\Downloads..., appium:automationName: UIAutomator2, appium:deviceName: BhargavPixel5, platformName: ANDROID}}]
+Capabilities {appium:app: C:\Users\bhargavs\Downloads..., appium:automationName: UIAutomator2, appium:deviceName: BhargavPixel5, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:117)
+at com.AppiumFrameworkDesign.BaseTestUtils.BaseTest.ConfigureAppium(BaseTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method signature="CheckouttoHybrid(java.util.HashMap)[pri:0, instance:com.AppiumFrameworkDesign.Ppu_tc_endtoend@41a0aa7d]" started-at="2023-04-27T20:31:40 IST" name="CheckouttoHybrid" data-provider="getdata" finished-at="2023-04-27T20:31:40 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Test@1234, emailid=dublitest1@yopmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.ppubarereactnative' application. Consider checking the driver's troubleshooting documentation. Original error: 'com.ppubarereactnative.SplashActivity' or 'com.ppubarereactnative.com.ppubarereactnative.SplashActivity' never started. Consider checking the driver's troubleshooting documentation. 
+Host info: host: 'TBIN-WLT-082213', ip: '192.168.1.4'
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=BhargavPixel5, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:\Users\bhargavs\Downloads\ppu-release-v33.apk}], desiredCapabilities=Capabilities {appium:app: C:\Users\bhargavs\Downloads..., appium:automationName: UIAutomator2, appium:deviceName: BhargavPixel5, platformName: ANDROID}}]
+Capabilities {appium:app: C:\Users\bhargavs\Downloads..., appium:automationName: UIAutomator2, appium:deviceName: BhargavPixel5, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.ppubarereactnative' application. Consider checking the driver's troubleshooting documentation. Original error: 'com.ppubarereactnative.SplashActivity' or 'com.ppubarereactnative.com.ppubarereactnative.SplashActivity' never started. Consider checking the driver's troubleshooting documentation. 
+Host info: host: 'TBIN-WLT-082213', ip: '192.168.1.4'
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=BhargavPixel5, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:\Users\bhargavs\Downloads\ppu-release-v33.apk}], desiredCapabilities=Capabilities {appium:app: C:\Users\bhargavs\Downloads..., appium:automationName: UIAutomator2, appium:deviceName: BhargavPixel5, platformName: ANDROID}}]
+Capabilities {appium:app: C:\Users\bhargavs\Downloads..., appium:automationName: UIAutomator2, appium:deviceName: BhargavPixel5, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:117)
+at com.AppiumFrameworkDesign.BaseTestUtils.BaseTest.ConfigureAppium(BaseTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckouttoHybrid -->
+        <test-method signature="CheckouttoHybrid(java.util.HashMap)[pri:0, instance:com.AppiumFrameworkDesign.Ppu_tc_endtoend@41a0aa7d]" started-at="2023-04-27T20:31:40 IST" name="CheckouttoHybrid" data-provider="getdata" finished-at="2023-04-27T20:31:40 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=, emailid=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.ppubarereactnative' application. Consider checking the driver's troubleshooting documentation. Original error: 'com.ppubarereactnative.SplashActivity' or 'com.ppubarereactnative.com.ppubarereactnative.SplashActivity' never started. Consider checking the driver's troubleshooting documentation. 
+Host info: host: 'TBIN-WLT-082213', ip: '192.168.1.4'
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=BhargavPixel5, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:\Users\bhargavs\Downloads\ppu-release-v33.apk}], desiredCapabilities=Capabilities {appium:app: C:\Users\bhargavs\Downloads..., appium:automationName: UIAutomator2, appium:deviceName: BhargavPixel5, platformName: ANDROID}}]
+Capabilities {appium:app: C:\Users\bhargavs\Downloads..., appium:automationName: UIAutomator2, appium:deviceName: BhargavPixel5, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.ppubarereactnative' application. Consider checking the driver's troubleshooting documentation. Original error: 'com.ppubarereactnative.SplashActivity' or 'com.ppubarereactnative.com.ppubarereactnative.SplashActivity' never started. Consider checking the driver's troubleshooting documentation. 
+Host info: host: 'TBIN-WLT-082213', ip: '192.168.1.4'
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=BhargavPixel5, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:\Users\bhargavs\Downloads\ppu-release-v33.apk}], desiredCapabilities=Capabilities {appium:app: C:\Users\bhargavs\Downloads..., appium:automationName: UIAutomator2, appium:deviceName: BhargavPixel5, platformName: ANDROID}}]
+Capabilities {appium:app: C:\Users\bhargavs\Downloads..., appium:automationName: UIAutomator2, appium:deviceName: BhargavPixel5, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:117)
+at com.AppiumFrameworkDesign.BaseTestUtils.BaseTest.ConfigureAppium(BaseTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckouttoHybrid -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.AppiumFrameworkDesign.Ppu_tc_endtoend@41a0aa7d]" started-at="2023-04-27T20:31:40 IST" name="teardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1682607700992" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.AppiumFrameworkDesign.Ppu_tc_endtoend -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
